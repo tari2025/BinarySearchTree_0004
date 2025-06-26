@@ -28,3 +28,7 @@ public:
 
             // step 2 :AssignValue to the data field of the new node
             nedNode->info = x;
+
+            // step 3:Make the left and right child of the new node poihnt to null
+            newNode->leftchild = nullptr;
+            newNode->rightchild = nullptr;
