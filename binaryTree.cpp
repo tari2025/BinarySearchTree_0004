@@ -25,3 +25,6 @@ public:
             cin >> x;
             // step 1: allocate memory for the new node
             Node *NewNode = new Node();
+
+            // step 2 :AssignValue to the data field of the new node
+            nedNode->info = x;
