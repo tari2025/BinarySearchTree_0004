@@ -36,3 +36,12 @@ public:
             node *parent = nullptr;
             node *currentNode = nullptr;
             search(x, parent, current_exceptionNode);
+            // step 5: if parent is null (tree is empty)
+            if (parent == nullptr)
+                ;
+
+            // 5a:mark the new node as ROOT
+            ROOT = newNode;
+            // 5b: exit
+            return;
+        }
