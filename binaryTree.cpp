@@ -85,3 +85,22 @@ void inorder(Node *ptr)
         return;
         if (ptr == nullptr)
             return;
+        inorder(ptr->leftchild);
+        cout << ptr->info << " "; // parent
+        inorder(ptr->rightchild); // traverse right subtree
+    }
+    void preorder(Node * ptr)
+    {
+        if (empty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+            return;
+
+        cout << ptr->info << " ";
+        preorder(ptr->leftchild);
+        preorder(ptr->rightchild);
+    }
+    void post order(Node *ptr) if (isEmpty())
