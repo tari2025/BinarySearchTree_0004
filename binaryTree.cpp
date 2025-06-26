@@ -14,3 +14,12 @@ public:
         leftchild = nullptr;  // initialize left child to null
         rightchild = nullptr; // initialize right child to nill
     };
+    BinaryTree()
+    {
+        ROOT = nullptr; // initialize root to null
+
+        void insert()
+        {
+            int x;
+            cout << "Masukkan nilai: ";
+            cin >> x;
