@@ -32,3 +32,7 @@ public:
             // step 3:Make the left and right child of the new node poihnt to null
             newNode->leftchild = nullptr;
             newNode->rightchild = nullptr;
+            // step 4: locate the node which will be the parent of the node to be inserted
+            node *parent = nullptr;
+            node *currentNode = nullptr;
+            search(x, parent, current_exceptionNode);
